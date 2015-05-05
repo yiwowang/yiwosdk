@@ -1,0 +1,1882 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yiwoSDK</name>
+    </assembly>
+    <members>
+        <member name="M:yiwoSDK.C3GQQ.SetHttpWeb(yiwoSDK.CHttpWeb)">
+            <summary>
+            设置3gqq使用的CHttpWeb网络对象
+            </summary>
+            <param name="ch">CHttpWeb网络对象</param>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetSID">
+            <summary>
+            获取sid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetMyQQ">
+            <summary>
+            获取当前登录的QQ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.Login(System.String,System.String,System.String)">
+            <summary>
+            登录3GQQ
+            </summary>
+            <param name="QQnumber">QQ</param>
+            <param name="Password">密码</param>
+            <param name="LoginType">登录状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.LoginByVC(System.String)">
+            <summary>
+            出现验证码时登录3GQQ
+            </summary>
+            <param name="verifycode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.LoginBySID(System.String)">
+            <summary>
+            通过sid登录
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.SendMsg(System.String,System.String,System.String)">
+            <summary>
+            发送消息给好友
+            </summary>
+            <param name="SID">sid</param>
+            <param name="ToQQ">好友QQ</param>
+            <param name="Content">消息内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetQQMain(System.String)">
+            <summary>
+            返回主界面
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.HouseSend(System.String,System.String,System.String)">
+            <summary>
+            发送家信
+            </summary>
+            <param name="SID">sid</param>
+            <param name="ToQQ">好友QQ</param>
+            <param name="Content">家信内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.SendShuo(System.String,System.String,System.String,System.String)">
+            <summary>
+            发表说说
+            </summary>
+            <param name="SID">sid</param>
+            <param name="Content">说说内容</param>
+            <param name="PhoneType">移动设备类型：iphone ipad 3gqq</param>
+            <param name="Adress">地理位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetQzoneInfo(System.String,System.String)">
+            <summary>
+            空间资料
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetQQInfo(System.String,System.String)">
+            <summary>
+            QQ资料
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.SetQzoneInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            设置空间资料
+            </summary>
+            <param name="spaceName">空间名称</param>
+            <param name="desc">空间资料</param>
+            <param name="sign">空间签名</param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.SetQQInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置QQ资料
+            </summary>
+            <param name="nick">昵称</param>
+            <param name="signname">签名</param>
+            <param name="gender">性别</param>
+            <param name="age">年龄</param>
+            <param name="phoneNo">电话</param>
+            <param name="adress">地址</param>
+            <param name="email">邮件</param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.Quit(System.String)">
+            <summary>
+            退出3GQQ
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetFriendGroup(System.String)">
+            <summary>
+            获取群
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetFriendByOnline(System.Int32,System.String)">
+            <summary>
+            获取在线好友
+            </summary>
+            <param name="page"></param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetFriendByGroup(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取群好友
+            </summary>
+            <param name="GroupID"></param>
+            <param name="page"></param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetFriendByRecent(System.String)">
+            <summary>
+            获取最近联系好友
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.GetQQMsg(System.String)">
+            <summary>
+            获取QQ消息
+            </summary>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.QzoneVisitTo(System.String,System.String)">
+            <summary>
+            访问对方空间
+            </summary>
+            <param name="QQnumber"></param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.C3GQQ.WeiBoSend(System.String,System.String)">
+            <summary>
+            发表微博
+            </summary>
+            <param name="Content">微博内容</param>
+            <param name="SID">sid</param>
+            <returns></returns>
+        </member>
+        <member name="T:yiwoSDK.CWebQQ">
+            <summary>
+            CWebQQ类提供webqq的相关操作
+            </summary>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.IsOnline">
+            <summary>
+            当前登录的QQ是否在线
+            </summary>
+            <returns>在线=True,不在线=False</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetHttpWeb(yiwoSDK.CHttpWeb)">
+            <summary>
+            设置webqq使用的网络对象
+            </summary>
+            <param name="ch">CHttpWeb类的对象</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.vfwebqq(System.String)">
+            <summary>
+            获取vfwebqq
+            </summary>
+            <param name="strResult2">第二次登陆结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.psessionid(System.String)">
+            <summary>
+            psessionid
+            </summary>
+            <param name="strResult2">第二次登陆结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.ptwebqq(System.String)">
+            <summary>
+            获取ptwebqq
+            </summary>
+            <param name="cookie">cookie，默认自动获取</param>
+            <returns>返回ptwebqq</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.g_tk(System.String)">
+            <summary>
+            获取g_tk
+            </summary>
+            <param name="skey">skey值</param>
+            <returns>返回g_tk</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetMyQQ">
+            <summary>
+            获取当前登录的QQ
+            </summary>
+            <returns>返回登录的QQ</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.BindEventReceiveMsg(System.Windows.Forms.Form,yiwoSDK.CWebQQ.DelegateReceiveJsonMsg)">
+            <summary>
+            绑定接收消息函数，事件参数是json数据，可以在绑定的函数中使用控件，已经做好了跨线程访问控件处理
+            </summary>
+            <param name="form">当前窗体From对象</param>
+            <param name="ReceiveJsonMsg">触发接受消息的函数，返回json消息</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.BindEventReceiveMsg(System.Windows.Forms.Form,yiwoSDK.CWebQQ.DelegateReceiveObjectMsg)">
+            <summary>
+            绑定接收消息函数，事件参数是转化后的对象，可以在绑定的函数中使用控件，已经做好了跨线程访问控件处理
+            </summary>
+            <param name="form">当前窗体From对象</param>
+            <param name="ReceiveJsonMsg">触发接受消息的函数,返回json消息</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.BindEventReceiveMsg(yiwoSDK.CWebQQ.DelegateReceiveObjectMsg)">
+            <summary>
+            绑定接收消息函数，事件参数是转化后的对象，注意不要在绑定的函数中使用控件，请自己处理跨线程访问控件
+            </summary>
+            <param name="ReceiveObjectMsg">触发接受消息的函数</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.BindEventReceiveMsg(yiwoSDK.CWebQQ.DelegateReceiveJsonMsg)">
+            <summary>
+            绑定接收消息函数，事件参数是json数据，注意不要在绑定的函数中使用控件，请自己处理跨线程访问控件
+            </summary>
+            <param name="ReceiveJsonMsg">触发接受消息的函数</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.Login(System.Int64,System.String,System.String,System.String)">
+            <summary>
+            登陆webqq
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <param name="password">密码</param>
+            <param name="verifyCode">验证码</param>
+            <param name="Status">在线状态</param>
+            <param name="IsMD5Password">密码参数是否是MD5值</param>
+            <returns>返回0代表登陆成功</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.ReLogin(System.String)">
+            <summary>
+            重新登录
+            </summary>
+            <param name="status">状态</param>
+            <returns>0=成功；1=失败</returns>
+        </member>
+        <member name="F:yiwoSDK.CWebQQ.verifysessionx">
+            <summary>
+            获取登陆默认验证码
+            </summary>
+            <param name="QQnumber">欲登录的QQ</param>
+            <returns>返回默认验证码或验证码图片地址</returns>
+            
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetLoginVCImage(System.String)">
+            <summary>
+            获取登录图片验证码
+            </summary>
+            <param name="QQnumber">欲登陆的QQ</param>
+            <returns>验证码图片</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetFriendList">
+            <summary>
+            获取好友列表
+            </summary>
+            <returns>好友列表json数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupList">
+            <summary>
+            获取群列表
+            </summary>
+            <returns>群列表json数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupMemberList(System.String)">
+            <summary>
+            获取群成员列表
+            </summary>
+            <param name="code">群code</param>
+            <returns>群成员json数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetQQHeadImage(System.String,System.Boolean)">
+            <summary>
+            获取好友QQ头像
+            </summary>
+            <param name="uin">好友uin</param>
+            <returns>头像图片</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupImage(System.String)">
+            <summary>
+            获取群头像
+            </summary>
+            <param name="code">群code</param>
+            <returns>群头像图片</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetStrangerCard(System.String)">
+            <summary>
+            获取陌生人资料卡片
+            </summary>
+            <param name="uin">陌生人uin</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetPersionCard(System.String)">
+            <summary>
+            获取好友资料卡片
+            </summary>
+            <param name="uin">好友uin</param>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetOnlineStatus">
+            <summary>
+            获取当前在线状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetSign(System.String)">
+            <summary>
+            获取个性签名
+            </summary>
+            <param name="uin">好友uin</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SendMsgToFriend(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送给好友或群成员消息
+            </summary>
+            <param name="uin">好友或群成员的uin</param>
+            <param name="Content">消息文本</param>
+            <param name="FontName">字体名称</param>
+            <param name="FontSize">字体大小</param>
+            <param name="FontColor">字体颜色></param>
+            <param name="BIU_SetValue">字体风格</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SendMsgToGroupFriend(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送消息给群成员
+            </summary>
+            <param name="gid">群gid</param>
+            <param name="uin">群成员uin</param>
+            <param name="Content">消息文本</param>
+            <param name="FontName">字体名称</param>
+            <param name="FontSize">字体大小</param>
+            <param name="FontColor">字体颜色></param>
+            <param name="BIU_SetValue">字体风格</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SendMsgToGroup(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送消息给群
+            </summary>
+            <param name="gid">群gid</param>
+            <param name="code">群code</param>
+            <param name="Content">消息文本</param>
+            <param name="FullFilePath">本地图片路径</param>
+            <param name="FontName">字体名称</param>
+            <param name="FontSize">字体大小</param>
+            <param name="FontColor">字体颜色></param>
+            <param name="BIU_SetValue">字体风格</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetQQlevel(System.String)">
+            <summary>
+            获取QQ等级
+            </summary>
+            <param name="uin">好友uin</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetQQnumber(System.String)">
+            <summary>
+            根据好友uin获取QQ号码
+            </summary>
+            <param name="uin">好友uin</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupNumber(System.String)">
+            <summary>
+            根据群code获取群号
+            </summary>
+            <param name="code">群code</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupNotice(System.String)">
+            <summary>
+            获取群公告
+            </summary>
+            <param name="code">群code</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupInfo(System.String)">
+            <summary>
+            获取群资料
+            </summary>
+            <param name="code">群code</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SearchByNick(System.String,System.Int32)">
+            <summary>
+            根据昵称查找好友
+            </summary>
+            <param name="Nick">昵称</param>
+            <param name="page">第几页</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetSearchVC">
+            <summary>
+            搜索好友或群的验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SearchByQQ(System.String,System.String)">
+            <summary>
+            根据QQ查找好友
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SearchByTerm(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据条件查找好友
+            </summary>
+            <param name="Pcode">省代码</param>
+            <param name="Ccode">市代码</param>
+            <param name="page">第几页</param>
+            <param name="agerg">年龄</param>
+            <param name="sex">性别</param>
+            <param name="online">是否在线：1在线，0不在线</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetAddVC">
+            <summary>
+            获取加好友或群的验证码图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.AddFriend(System.String,System.String,System.String)">
+            <summary>
+            加好友
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="VCode">验证码</param>
+            <param name="msg">验证消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.AddGroup(System.String,System.String,System.String)">
+            <summary>
+            加群
+            </summary>
+            <param name="gcode">群code</param>
+            <param name="VCode">验证码</param>
+            <param name="msg">验证消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetSign(System.String)">
+            <summary>
+            设置个性签名
+            </summary>
+            <param name="sign">签名内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetInfo(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置个人资料
+            </summary>
+            <param name="nick">昵称</param>
+            <param name="gender">性别：男，女</param>
+            <param name="blood">血型</param>
+            <param name="birthyear">生日：年</param>
+            <param name="birthmonth">生日：月</param>
+            <param name="birthday">生日：日</param>
+            <param name="phone">电话号码</param>
+            <param name="mobile">手机号码</param>
+            <param name="email">电子邮件</param>
+            <param name="occupation">职业</param>
+            <param name="college">毕业学校</param>
+            <param name="homepage">主页</param>
+            <param name="personal">个人说明</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetNewStatus(System.String)">
+            <summary>
+            设置新在线状态
+            </summary>
+            <param name="newStatus">在线状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.QuitGroup(System.String)">
+            <summary>
+            退群
+            </summary>
+            <param name="gcode">群code</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GroupRequest(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            处理群请求
+            </summary>
+            <param name="from_uin"></param>
+            <param name="request_uin"></param>
+            <param name="isAgree"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.FriendRequest(System.String,System.Int32,System.String)">
+            <summary>
+            处理好友请求
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="OKAdd_OK_No">1=同意并添加，2=同意，3=拒绝</param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetMarkName(System.String,System.String)">
+            <summary>
+            设置好友备注
+            </summary>
+            <param name="uin">好友uin</param>
+            <param name="NewMarkName">备注名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.DelFriend(System.String,System.Boolean)">
+            <summary>
+            删除好友
+            </summary>
+            <param name="uin">好友uin</param>
+            <param name="isOnlyDelMyList">仅从自己的列表删除他</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetRecentList">
+            <summary>
+            获取最近联系人列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.Quit">
+            <summary>
+            退出QQ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.skey">
+            <summary>
+            获取skey
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetFriendMsgImage(System.String,yiwoSDK.CFace)">
+            <summary>
+            获取好友消息中的图片或表情
+            </summary>
+            <param name="uin">好友uin</param>
+            <param name="cface">cface对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetGroupMsgImage(System.String,System.String,yiwoSDK.CFace)">
+            <summary>
+            获取群消息中的图片或表情
+            </summary>
+            <param name="code">群code</param>
+            <param name="uin">好友uin</param>
+            <param name="cface">cface对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetHeadImage(System.String)">
+            <summary>
+            设置头像
+            </summary>
+            <param name="FullFilePath">本地图片文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SendPicToGroup(System.String,System.String,System.String)">
+            <summary>
+            发送图片给群
+            </summary>
+            <param name="group_uin">群gid</param>
+            <param name="group_code">群code</param>
+            <param name="FullFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetLocationData">
+            <summary>
+            获取省份城市信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.CreateDiscu(System.String[],System.String)">
+            <summary>
+            创建讨论组
+            </summary>
+            <param name="uinlist">讨论组成员的uin列表，列不包括自己</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetDiscuInfo(System.String)">
+            <summary>
+            获取讨论组资料信息
+            </summary>
+            <param name="did"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetDiscuVC">
+            <summary>
+            当创建讨论组需要的验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SendMsgToDiscu(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            向讨论组发消息
+            </summary>
+            <param name="did">讨论组id，从讨论组列表中可以获取did</param>
+            <param name="Content">消息内容</param>
+            <param name="FullFilePath">图片文件完整路径</param>
+            <param name="FontName">字体名称</param>
+            <param name="FontSize">字体大小</param>
+            <param name="FontColor">字体颜色</param>
+            <param name="BIU_SetValue">字体样式</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetDiscuList">
+            <summary>
+            获取讨论组列表
+            </summary>
+            <returns>讨论组列表信息，包括讨论组名，did,成员信息</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.QuitDiscu(System.String)">
+            <summary>
+            退出讨论组
+            </summary>
+            <param name="did">讨论组id</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetDiscuName(System.String,System.String)">
+            <summary>
+            修改讨论组名称
+            </summary>
+            <param name="did">讨论组id</param>
+            <param name="newname">讨论组名称</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetMsgRecord(System.String,System.Int32)">
+            <summary>
+            获取一个月内的消息记录
+            </summary>
+            <param name="uin">对方uin</param>
+            <param name="page">第几页</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.DelMsgRecord(System.String)">
+            <summary>
+            删除聊天记录
+            </summary>
+            <param name="uin">要删除聊天记录的好友uin</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetFriendGroup(System.String,System.String)">
+            <summary>
+            移动好友到其他分组
+            </summary>
+            <param name="uin">要移动的好友uin</param>
+            <param name="newid">目的分组id</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.SetMyCardInGroup(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            设置群中自己的名片
+            </summary>
+            <param name="gcode">可以从群列表中获取gcode</param>
+            <param name="name">修改后的昵称</param>
+            <param name="phone">修改后的电话</param>
+            <param name="email">修改后的邮件</param>
+            <param name="remark">修改后的备注</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWebQQ.GetMyCardInGroup(System.String)">
+            <summary>
+            获取自己的群名片
+            </summary>
+            <param name="gcode">所在的群gocde</param>
+            <returns>返回自己在群名片中的信息</returns>
+        </member>
+        <member name="E:yiwoSDK.CWebQQ.EventReceiveObjectMsg">
+            <summary>
+            消息事件对象
+            </summary>
+        </member>
+        <member name="P:yiwoSDK.CWebQQ.clientid">
+            <summary>
+            获取clientid
+            </summary>
+        </member>
+        <member name="T:yiwoSDK.CWebQQ.DelegateReceiveJsonMsg">
+            <summary>
+            消息委托
+            </summary>
+        </member>
+        <member name="F:yiwoSDK.ByteBuffer.BaseStream">
+            <summary>
+            获取同后备存储区连接的基础流
+            </summary>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            设置当前流中的位置
+            </summary>
+            <param name="offSet">相对于origin参数字节偏移量</param>
+            <param name="origin">System.IO.SeekOrigin类型值,指示用于获取新位置的参考点</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Peek">
+            <summary>
+            检测是否还有可用字节
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.ToByteArray">
+            <summary>
+            将整个流内容写入字节数组，而与 Position 属性无关。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Put(System.Boolean)">
+            <summary>
+            压入一个布尔值,并将流中当前位置提升1
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Put(System.Byte)">
+            <summary>
+            压入一个Byte,并将流中当前位置提升1
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Put(System.Byte[])">
+            <summary>
+            压入Byte数组,并将流中当前位置提升数组长度
+            </summary>
+            <param name="value">字节数组</param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.PutLong(System.Int64)">
+            <summary>
+            Puts the int.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.PutLong(System.UInt64)">
+            <summary>
+            压入一个int,并将流中当前位置提升4
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.PutLong(System.Int32,System.UInt64)">
+            <summary>
+            Puts the int.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:yiwoSDK.ByteBuffer.Get">
+            <summary>
+            读取Byte值,并将流中当前位置提升1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CData.json.FormatJson(System.String)">
+            <summary>
+            格式化json数据，删除没用的空格等字符
+            </summary>
+            <param name="JsonData">Json数据</param>
+            <returns>格式化后的json数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CData.json.SetData(System.String,System.Boolean)">
+            <summary>
+            设置json数据
+            </summary>
+            <param name="JsonData">json数据</param>
+            <param name="IsFormatJson">是否对数据格式化</param>
+        </member>
+        <member name="M:yiwoSDK.CData.json.isEnd">
+            <summary>
+            是否已经读取到记录末尾
+            </summary>
+            <returns>记录读取完毕返回True</returns>
+        </member>
+        <member name="M:yiwoSDK.CData.json.GetValue(System.String,System.String,System.Boolean)">
+            <summary>
+            获取json数据中的字段的值
+            </summary>
+            <param name="strName">字段名称，可以用.表示子节点和父节点的关系，例如Person.Student.Age</param>
+            <param name="strJsonData">欲读取的json数据</param>
+            <param name="isDelNotNeedChar">去掉Json中的不需要的字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CData.json.MoveNext">
+            <summary>
+            移动到下一条记录，再循环读取记录的时候需要在每次循环中执行
+            </summary>
+        </member>
+        <member name="M:yiwoSDK.CData.json.DelNotNeedChar(System.String)">
+            <summary>
+            删除不需要的字符，也就是返回值的内容，例如{}
+            </summary>
+            <param name="result">数据</param>
+            <returns>删除后的数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CFace.GetRevFaceID(System.Int32)">
+            <summary>
+            转换收到的表情ID
+            </summary>
+            <param name="id">收到的表情ID</param>
+            <returns>返回正确的表情ID</returns>
+        </member>
+        <member name="M:yiwoSDK.JSONObject.getArrayPosition(System.String)">
+            <summary>
+            获取真正的数组，因为有可能其他字段名称和数组名称相同
+            </summary>
+            <param name="name">数组名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.JSONObject.FormatJson(System.String)">
+            <summary>
+            格式化json数据，删除没用的空格等字符
+            </summary>
+            <param name="JsonData">Json数据</param>
+            <returns>格式化后的json数据</returns>
+        </member>
+        <member name="M:yiwoSDK.Sina.CWeibo.SetHttpWeb(yiwoSDK.CHttpWeb)">
+            <summary>
+            设置CHttpWeb对象，不同的对象Cookie不一样，为了防止Cookie干扰可以选择设置
+            </summary>
+            <param name="ch"></param>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.BindEventReceiveMsg(System.Windows.Forms.Form,yiwoSDK.CWeiXin.dMsg)">
+            <summary>
+            绑定消息函数，可以在绑定的函数中使用控件
+            </summary>
+            <param name="form">当前窗体From对象</param>
+            <param name="DReceiveMsg">触发接受消息的函数</param>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.BindEventReceiveMsg(yiwoSDK.CWeiXin.dMsg)">
+            <summary>
+            绑定消息函数，注意不要在绑定的函数中使用控件
+            </summary>
+            <param name="DReceiveMsg">触发接受消息的函数</param>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.GetHeadImage(System.String)">
+            <summary>
+            获取头像
+            </summary>
+            <param name="UserName">用户的username</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.GetLoginQRCodeImage">
+            <summary>
+            获取登录二维码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.SendMsg(System.String,System.String)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="ToUserName">对方username</param>
+            <param name="Content">消息内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.GetRecentList">
+            <summary>
+            获取最近聊天用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.GetFriendList">
+            <summary>
+            获取微信好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CWeiXin.LoginOut">
+            <summary>
+            退出登录
+            </summary>
+        </member>
+        <member name="M:yiwoSDK.CTempChat.InitKEY(System.String)">
+            <summary>
+            初始化KEY
+            </summary>
+            <param name="ToQQ"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CTempChat.getVCode(System.String)">
+            <summary>
+            获取默认验证码，如果存在默认验证码返回4位，不存在返回大于4位字符
+            </summary>
+            <param name="QQ">需要登陆的QQ</param>
+            <returns>验证码或其他</returns>
+        </member>
+        <member name="M:yiwoSDK.CTempChat.Login(System.String,System.String,System.String)">
+            <summary>
+            登陆QQ，和传统登陆不一样，不在线、不掉线
+            </summary>
+            <param name="QQ">QQ</param>
+            <param name="Pass">密码</param>
+            <param name="vcode">验证码</param>
+            <returns>登陆结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CTempChat.getVCImage(System.String)">
+            <summary>
+            获取验证码图片
+            </summary>
+            <param name="QQ">登陆的QQ</param>
+            <returns>验证码图片</returns>
+        </member>
+        <member name="M:yiwoSDK.CTempChat.SendMsg(System.String,System.String)">
+            <summary>
+            发送临时会话
+            </summary>
+            <param name="msg">临时会话消息</param>
+            <param name="ToQQ">对方QQ，必须支持临时会话</param>
+            <returns>true=成功，false=失败</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.SetHttpWeb(yiwoSDK.CHttpWeb)">
+            <summary>
+            设置使用的网络对象
+            </summary>
+            <param name="ch">CHttpWeb类的对象</param>
+        </member>
+        <member name="M:yiwoSDK.CQQData.Login(System.String,System.String,System.String)">
+            <summary>
+            登陆QQ中心
+            </summary>
+            <param name="QQnumber">QQ账号</param>
+            <param name="password">QQ密码</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetLoginVCImage(System.String)">
+            <summary>
+            获取登录验证码图片
+            </summary>
+            <param name="QQnumber">欲登陆的QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetLoginVC(System.String)">
+            <summary>
+            获取默认验证码或验证码图片
+            </summary>
+            <param name="QQnumber">欲登陆的QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.g_tk(System.String)">
+            <summary>
+            获取g_tk
+            </summary>
+            <param name="skey">skey值</param>
+            <returns>返回g_tk</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.skey(System.String)">
+            <summary>
+            从cookie中获取skey
+            </summary>
+            <param name="cookie">cookie，获取默认自动</param>
+            <returns>返回skey</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetP(System.String,System.String,System.String)">
+            <summary>
+            计算数据包中的p字段
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <param name="password">密码</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFriendList">
+            <summary>
+            获取好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFriendRemarkList">
+            <summary>
+            获取带备注的好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFriendOnlineList(System.String[])">
+            <summary>
+            获取QQ好友上线时间和与自己沟通时间
+            </summary>
+            <param name="QQArr">要查询的好友的QQ数组</param>
+            <returns>c=最后一次联系是多少天内，o=最近多少天内上线</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetIsRegQzoneList(System.String[])">
+            <summary>
+            是否开通了QQ空间
+            </summary>
+            <param name="QQArr">要查询的好友的QQ数组</param>
+            <returns>zq=1开通了，zq=0没开通</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetCanKnowRichInfo(System.String[])">
+            <summary>
+            获取可能认识人的资料
+            </summary>
+            <param name="QQArr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFriendRemarkBatList">
+            <summary>
+            建议备注
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetQQFace(System.String)">
+            <summary>
+            获取好友头像
+            </summary>
+            <param name="QQNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetQQRichInfo(System.String)">
+            <summary>
+            详细资料
+            </summary>
+            <param name="QQNumber"></param>
+            <returns>overlap=共同好友数量</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetGroupCard(System.String)">
+            <summary>
+            获取群卡片信息
+            </summary>
+            <param name="QQNumber"></param>
+            <returns>c=备注，n=所在的群</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.SetHiddenVisible(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            设置是否对某好友隐身可见，以及设置是否在线对其隐身
+            </summary>
+            <param name="QQNumber"></param>
+            <param name="IsHiddenCanSee">是否隐身对其可见</param>
+            <param name="IsOnlineCanNotSee">是否在线对其隐身</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetSingleList">
+            <summary>
+            获取单项好友列表，对方有我，我没他
+            </summary>
+            <returns>t=具体删除的时间戳，u=单向好友QQ</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetBaseKey">
+            <summary>
+            获取需要恢复的好友列表，是删除的好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFirendCategory">
+            <summary>
+            好友分组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetMySummaryInfo">
+            <summary>
+            获取个人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetMyInfo">
+            <summary>
+            获取个人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetCanKnow">
+            <summary>
+            可能认识的好友
+            </summary>
+            <returns>c=共同好友数量</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetSafeInfo">
+            <summary>
+            安全信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFeed(System.Int32)">
+            <summary>
+            好友动态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetQunList">
+            <summary>
+            获取群列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetQunMemberList(System.String)">
+            <summary>
+            获取群成员列表
+            </summary>
+            <param name="QunNumber">群号</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetFriendListSample">
+            <summary>
+            获取简洁的好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.GetQuanZi">
+            <summary>
+            获取圈子列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.CreateQun(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="QunName"></param>
+            <param name="QunText"></param>
+            <returns>gc=群号</returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.SetQunInfo(System.String,System.String,System.String)">
+            <summary>
+            修改群信息
+            </summary>
+            <param name="QunNumber">群号</param>
+            <param name="QunName">群名</param>
+            <param name="QunText">群介绍</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.SetRemark(System.String,System.String)">
+            <summary>
+            修改备注
+            </summary>
+            <param name="QQNumber"></param>
+            <param name="RemarkName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.DelFriend(System.String[],System.Boolean)">
+            <summary>
+            删除好友
+            </summary>
+            <param name="QQArr">好友QQ数组</param>
+            <param name="IsDelMeFromHisList">是否从对方列表中删除自己</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQQData.MoveFriend(System.String[],System.String)">
+            <summary>
+            移动好友到指定分组
+            </summary>
+            <param name="QQArr">要移动的好友</param>
+            <param name="gid">分组ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetMyQQ">
+            <summary>
+            当前登录的QQ
+            </summary>
+            <returns>返回登录的QQ</returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.SetHttpWeb(yiwoSDK.CHttpWeb)">
+            <summary>
+            设置webqq使用的网络对象
+            </summary>
+            <param name="ch">CHttpWeb类的对象</param>
+        </member>
+        <member name="F:yiwoSDK.CQzone.verifysessionx">
+            <summary>
+            登陆QQ空间
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <param name="password">密码</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetLoginVCImage(System.String)">
+            <summary>
+            获取登录验证码图片
+            </summary>
+            <param name="QQnumber">欲登陆的QQ</param>
+            <returns></returns>
+        </member>
+        <member name="F:yiwoSDK.CQzone.sig">
+            <summary>
+            获取默认验证码或验证码图片
+            </summary>
+            <param name="QQnumber">欲登陆的QQ</param>
+            <returns></returns>
+            string 
+        </member>
+        <member name="M:yiwoSDK.CQzone.g_tk(System.String)">
+            <summary>
+            获取g_tk
+            </summary>
+            <param name="skey">skey值</param>
+            <returns>返回g_tk</returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.skey(System.String)">
+            <summary>
+            从cookie中获取skey
+            </summary>
+            <param name="cookie">cookie，获取默认自动</param>
+            <returns>返回skey</returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetP(System.String,System.String,System.String)">
+            <summary>
+            计算数据包中的p字段
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <param name="password">密码</param>
+            <param name="VCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetUserInfo(System.String)">
+            <summary>
+            获取好友信息
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetFriendList">
+            <summary>
+            获取好友列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetPersionCard(System.String)">
+            <summary>
+            获取好友资料卡片
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.VisitCount(System.String)">
+            <summary>
+            获取空间访客数量
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.VisitorList(System.String)">
+            <summary>
+            获取访客列表
+            </summary>
+            <param name="QQnumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetQQHeadImage(System.String)">
+            <summary>
+            获取QQ头像
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetQQShowImage(System.String)">
+            <summary>
+            获取QQ秀图片
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetQQOnlineImage(System.String,System.Int32)">
+            <summary>
+            获取QQ在线状态图片
+            </summary>
+            <param name="QQnumber">好友</param>
+            <param name="style">显示风格</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetQzoneHeadImage(System.String,System.Int32)">
+            <summary>
+            获取空间头像
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="size">头像大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.WordsAdd(System.String,System.String)">
+            <summary>
+            给好友留言
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="Content">留言内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.WordsReply(System.String,System.String,System.String)">
+            <summary>
+            主人回复留言者
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="WordsID">留言ID</param>
+            <param name="content">回复内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.WordsComment(System.String,System.String,System.String)">
+            <summary>
+            留言者回复主人
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="WordsID">留言ID</param>
+            <param name="content">回复内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.WordsDel(System.String,System.String)">
+            <summary>
+            删除留言
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="WordsID">留言ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.WordsList(System.String,System.Int32)">
+            <summary>
+            留言列表
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="page">第几页</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetFriendFeeds(System.Int32)">
+            <summary>
+            获取好友动态
+            </summary>
+            <param name="count">数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoList(System.String,System.Int32)">
+            <summary>
+            获取说说列表
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="page">第几页</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoAdd(System.String)">
+            <summary>
+            发表说说
+            </summary>
+            <param name="Content">说说内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoComment(System.String,System.String,System.String)">
+            <summary>
+            说说评论者回复主人
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="shuoid">说说ID</param>
+            <param name="content">回复内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoReply(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            说说主人回复评论者
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="shuoid">说说ID</param>
+            <param name="content">回复内容</param>
+            <param name="QQpos">好友的QQ位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoLike(System.String,System.String,System.Boolean)">
+            <summary>
+            赞说说
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="shuoid">说说ID</param>
+            <param name="isLike">赞/取消赞</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoForward(System.String,System.String,System.String)">
+            <summary>
+            转载说说
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="shuoid">说说ID</param>
+            <param name="content">说说内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.ShuoDel(System.String)">
+            <summary>
+            删除说说
+            </summary>
+            <param name="shuoid">说说ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogAdd(System.String,System.String,System.String)">
+            <summary>
+            发表日志
+            </summary>
+            <param name="Category">日志分类</param>
+            <param name="Title">标题</param>
+            <param name="Content">内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogRouteInit(System.String)">
+            <summary>
+            获取日志域名
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogList(System.String,System.Int32)">
+            <summary>
+            日志列表
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="page">第几页</param>
+            <param name="isJson">是否为json数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogContent(System.String,System.String)">
+            <summary>
+            日志内容
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogDel(System.String)">
+            <summary>
+            删除日志
+            </summary>
+            <param name="blogid">日志ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogComment(System.String,System.String,System.String)">
+            <summary>
+            日志主人回复评论者
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <param name="content">内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogReply(System.String,System.String,System.String,System.String)">
+            <summary>
+            日志评论者回复主人
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <param name="content">回复内容</param>
+            <param name="QQid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogLike(System.String,System.String,System.Boolean)">
+            <summary>
+            赞日志
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <param name="isLike">赞/取消赞</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogVisitor(System.String,System.String)">
+            <summary>
+            日志访客
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogQuote(System.String,System.String,System.String)">
+            <summary>
+            转载日志
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <param name="MyCategory">我的日志分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.BlogShare(System.String,System.String,System.String)">
+            <summary>
+            分享日志
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="blogid">日志ID</param>
+            <param name="content">分享理由</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.PhotoVisitor(System.String,System.String)">
+            <summary>
+            相册访客
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="Albumid">相册ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.PhotoAlbum(System.String,System.Boolean)">
+            <summary>
+            获取相册列表信息
+            </summary>
+            <param name="QQnumber"></param>
+            <param name="isJson"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.PhotoList(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取某一相册的照片列表信息
+            </summary>
+            <param name="QQnumber">对方</param>
+            <param name="AlbumID">相册ID</param>
+            <param name="pageIndex">第几页</param>
+            <param name="pageSize">每页显示照片数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.PhotoPass(System.String,System.String,System.String,System.String)">
+            <summary>
+            回答问题进入某相册
+            </summary>
+            <param name="QQnumber">相册QQ</param>
+            <param name="albumid">相册ID</param>
+            <param name="question">相册问题</param>
+            <param name="answer">相册答案</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.PhotoRoute(System.String)">
+            <summary>
+            相册域名
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetDressVC">
+            <summary>
+            获取装扮验证码图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressModeCount(System.String)">
+            <summary>
+            模块数量
+            </summary>
+            <param name="QQNumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressModeData(System.String)">
+            <summary>
+            装扮数据
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressAddMode(System.Int32,System.String)">
+            <summary>
+            增加装扮模块
+            </summary>
+            <param name="Index"></param>
+            <param name="VCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressCopyCode(System.String)">
+            <summary>
+            克隆装扮代码
+            </summary>
+            <param name="QQNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressSave">
+            <summary>
+            装扮保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.DressDelMode(System.Int32)">
+            <summary>
+            删除装扮模块
+            </summary>
+            <param name="ModeCount"></param>
+        </member>
+        <member name="M:yiwoSDK.CQzone.MusicGet(System.String)">
+            <summary>
+            获取音乐列表
+            </summary>
+            <param name="QQnumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.MusicAdd(System.String,System.String,System.String)">
+            <summary>
+            添加音乐
+            </summary>
+            <param name="SongName">歌曲名</param>
+            <param name="Songer">歌手名</param>
+            <param name="URL">歌曲URL</param>
+            <returns>是否添加成功</returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.MusicDel(System.String)">
+            <summary>
+            删除音乐
+            </summary>
+            <param name="id">要删除的音乐ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.MusicIsRandom(System.Boolean)">
+            <summary>
+            是否随机播放
+            </summary>
+            <param name="isRandom">是否随机播放</param>
+            <returns>返回是否设置成功</returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GiftSend(System.String,System.String,System.String,System.String)">
+            <summary>
+            发送礼物
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <param name="GiftID">礼物ID</param>
+            <param name="Title">礼物标题</param>
+            <param name="Content">祝福语</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GiftList">
+            <summary>
+            获取礼物列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GiftImage(System.String,System.Boolean)">
+            <summary>
+            获取礼物图片
+            </summary>
+            <param name="GiftID">礼物ID</param>
+            <param name="isPNG">是否为PNG/GIF</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.GetHeadImageHD(System.String)">
+            <summary>
+            获取高清QQ头像
+            </summary>
+            <param name="QQnumber">好友QQ</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.FriendRelationship(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CQzone.shareURL(System.String,System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            分享网页
+            </summary>
+            <param name="shareURL">要分享的网页http开头的</param>
+            <param name="description">分享的描述信息</param>
+            <param name="title">分享的标题，默认自动获取</param>
+            <param name="summary">分享的简介，默认自动获取</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.IsQQnumber(System.String@)">
+            <summary>
+            简单检测是否为QQ的格式
+            </summary>
+            <param name="QQnumber">QQ号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.IsQQpassword(System.String@)">
+            <summary>
+            简单检测是否为密码格式
+            </summary>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.GetSDKinfo(System.String)">
+            <summary>
+            获取SDK信息
+            </summary>
+            <param name="Mode">模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.I_LOVE_BBS(System.String)">
+            <summary>
+            版权标志，yiwoSDK使用前必须加上
+            </summary>
+            <param name="URL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.GetRnd(System.Int32)">
+            <summary>
+            获取随机数
+            </summary>
+            <param name="len">随机数长度1-10</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.Split(System.String,System.String)">
+            <summary>
+            字符串为分隔符分割数组
+            </summary>
+            <param name="input"></param>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.Delay(System.Int32)">
+            <summary>
+            阻塞延时
+            </summary>
+            <param name="Second">延时多少秒</param>
+        </member>
+        <member name="M:yiwoSDK.CFun.SaveFileFromByteArray(System.Byte[],System.String)">
+            <summary>
+            从二进制数组保存到文件
+            </summary>
+            <param name="ByteArray">二进制数组</param>
+            <param name="FileName">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CFun.ExecuteScript(System.String)">
+            <summary>
+            执行JS
+            </summary>
+            <param name="sExpression">参数体</param>
+            <param name="sCode">JavaScript代码的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:yiwoSDK.CFun.Status">
+            <summary>
+            在线状态
+            </summary>
+        </member>
+        <member name="M:yiwoSDK.CEncode.MD5(System.String,System.Int32)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="md5_str">欲加密的字符串</param>
+            <param name="md5Len">长度</param>
+            <returns>返回加密结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.sha1(System.String)">
+            <summary>
+            sha1加密
+            </summary>
+            <param name="sha1_str">欲加密的字符串</param>
+            <returns>返回加密结果</returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.ToUTF8(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            UTF-8编码
+            </summary>
+            <param name="str">欲进行UTF-8编码的字符串</param>
+            <param name="isAll">是否全部编码</param>
+            <param name="isUpper">是否大写</param>
+            <returns>返回编码的字符串</returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.ToGB2312(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            GB2132编码
+            </summary>
+            <param name="str">欲进行GB2132编码的字符串</param>
+            <param name="isAll">是否全部编码</param>
+            <param name="isUpper">是否大写</param>
+            <returns>返回编码后的字符串</returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.ToUnicode(System.String,System.Boolean)">
+            <summary>
+            Unicode编码
+            </summary>
+            <param name="str">欲编码的Unicode字符串</param>
+            <param name="isAll">是否全部编码，False指仅对汉字编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.DeUnicode(System.String)">
+            <summary>
+            Unicode解码
+            </summary>
+            <param name="str">欲解码的Unicode字符串</param>
+            <returns>解码后的字符串</returns>
+        </member>
+        <member name="M:yiwoSDK.CEncode.DeBase64(System.String)">
+            <summary>
+            Base64解码
+            </summary>
+            <param name="str">欲解码的Base64字符串</param>
+            <returns>解码后的字符串</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.SetReferer(System.String)">
+            <summary>
+            设置Referer
+            </summary>
+            <param name="Referer">要设置的Referer</param>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.SetUserAgent(System.String)">
+            <summary>
+            设置UserAgent
+            </summary>
+            <param name="UserAgent">要设置UserAgent</param>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.SetWebProxy(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            设置代理
+            </summary>
+            <param name="IP">IP</param>
+            <param name="Proxy">端口</param>
+            <param name="UserName">账号</param>
+            <param name="UserPass">密码</param>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.SetWebProxy(System.Net.WebProxy)">
+            <summary>
+            设置代理
+            </summary>
+            <param name="myproxy">WebProxy对象</param>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.HttpSendData(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            发送HTTP数据包
+            </summary>
+            <param name="URL">URL</param>
+            <param name="Method">方式：GET或POST</param>
+            <param name="Data">POST数据部分，GET方式保持空</param>
+            <param name="Encode">编码方式：GB2132或UTF-8</param>
+            <param name="IsAllowAutoRedirect">是否允许自动重定向</param>
+            <returns>返回服务器响应的数据</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.GetCookie(System.String)">
+            <summary>
+            获取Cookie
+            </summary>
+            <param name="URL">URL</param>
+            <returns>返回Cookie</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.GetCookieByKey(System.String)">
+            <summary>
+            根据cookie 的Key 获取Cookie的value
+            </summary>
+            <param name="key">字段名</param>
+            <returns>返回Cookie</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.GetHeaders">
+            <summary>
+            获取数据包头信息
+            </summary>
+            <returns>返回数据包头信息</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.GetLog">
+            <summary>
+            获取网络数据日志，需要先开始记录
+            </summary>
+            <returns>返回网络数据日志</returns>
+        </member>
+        <member name="F:yiwoSDK.CHttpWeb.verifysession">
+            <summary>
+            获取网络图片
+            </summary>
+            <param name="URL">图像的URL</param>
+            <returns>返回Image对象</returns>
+        </member>
+        <member name="M:yiwoSDK.CHttpWeb.GetCookieContainer">
+            <summary>
+            获取CookieContainer
+            </summary>
+            <returns>返回CookieContainer</returns>
+        </member>
+    </members>
+</doc>
